@@ -23,6 +23,9 @@ return {
 					"php",
 					"javascript",
 				},
+                highlight = {
+                    enable = true,
+                },
 				indent = {
 					enable = true,
 					disable = { "python" },

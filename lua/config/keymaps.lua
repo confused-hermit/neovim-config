@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 
-map("n", "<C-s>", ":w!", { silent = true })
-map("i", "<C-s>", "<esc>:w!", { silent = true })
+map("n", "<C-s>", ":w!<cr>", { silent = true })
+map("i", "<C-s>", "<esc>:w!<cr>", { silent = true })
 
 map("n", "<A-j>", "<Esc>:m .+1<CR>==gi")
 map("n", "<A-k>", "<Esc>:m .-2<CR>==gi")
@@ -39,3 +39,5 @@ map("n", "<leader>fs", builtin.current_buffer_fuzzy_find, { desc = "search curre
 map("n", "<leader>lf", function()
 	vim.lsp.buf.format()
 end, { desc = "format buffer" })
+
+map("n", "<leader>lp", "<cmd>Lazy<cr>", {desc = "Lazy package manager"})
