@@ -41,3 +41,7 @@ map("n", "<leader>lf", function()
 end, { desc = "format buffer" })
 
 map("n", "<leader>lp", "<cmd>Lazy<cr>", {desc = "Lazy package manager"})
+
+map("n", "<leader>bn", "<cmd>bnext<cr>", {desc="next buffer"})
+map("n", "<leader>bp", "<cmd>bprev<cr>", {desc="previous buffer"})
+map("n", "<leader>bd", "<cmd>bdelete<cr>", {desc="delete buffer"})
