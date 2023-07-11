@@ -31,6 +31,13 @@ return {
 				"gopls",
 				"pyright",
 				"rust_analyzer",
+                "html",
+                "cssls",
+                "cssmodules_ls",
+                "tailwindcss",
+                "emmet_language_server",
+                "emmet_ls",
+
 			})
 			-- (Optional) Configure lua language server for neovim
 			local sign = function(opts)
